@@ -12,7 +12,7 @@ describe("alert", function () {
     $compile = _$compile_;
 
     element = angular.element(
-        "<div>" + 
+        "<div>" +
           "<alert ng-repeat='alert in alerts' type='alert.type'" +
             "close='removeAlert($index)'>{{alert.msg}}" +
           "</alert>" +
@@ -66,7 +66,7 @@ describe("alert", function () {
   it('should not show close buttons if no close callback specified', function () {
     element = $compile('<alert>No close</alert>')(scope);
     scope.$digest();
-    expect(findCloseButton(0).css('display')).toBe('none');
+    expect(findCloseButton(0)).toBeHidden();
   });
 
   it('it should be possible to add additional classes for alert', function () {

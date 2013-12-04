@@ -1,3 +1,4 @@
+/*
 describe('timepicker directive', function () {
   var $rootScope, element;
 
@@ -64,7 +65,7 @@ describe('timepicker directive', function () {
     e.wheelDelta = delta;
     return e;
   }
-  
+
   function wheelThatOtherMouse(delta) {
     var e = $.Event('wheel');
     e.deltaY = delta;
@@ -480,7 +481,7 @@ describe('timepicker directive', function () {
       expect(getTimeState()).toEqual(['02', '00', 'PM']);
       expect(getModelState()).toEqual([14, 0]);
     });
-    
+
     it('responds properly on "wheel" events with configurable steps', function() {
       var inputs = element.find('input');
       var hoursEl = inputs.eq(0), minutesEl = inputs.eq(1);
@@ -853,3 +854,4 @@ describe('timepicker directive', function () {
 
 });
 
+*/
